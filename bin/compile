@@ -19,11 +19,11 @@ ENVFILE=$3
 BP_DIR=`cd $(dirname $0); cd ..; pwd`
 
 echo "Upgrading gcc to 4.8" | arrow
-sudo apt-get install python-software-properties
-sudo add-apt-repository ppa:ubuntu-toolchain-r/test
-sudo apt-get update
-sudo apt-get install gcc-4.8
-sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-4.8 50
+apt-get install python-software-properties
+add-apt-repository ppa:ubuntu-toolchain-r/test
+apt-get update
+apt-get install gcc-4.8
+update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-4.8 50
 
 echo "Installing libvips" | arrow
 
